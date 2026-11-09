@@ -85,7 +85,7 @@ namespace gdjs {
         eventsBasedObjectVariantName:
           parsedRuntimeGameStatus.eventsBasedObjectVariantName,
         editorId: parsedRuntimeGameStatus.editorId,
-        editorCamera3D: parsedRuntimeGameStatus.editorCamera3D,
+        editorCamera: parsedRuntimeGameStatus.editorCamera,
       };
     } catch (e) {
       return null;
@@ -1293,7 +1293,7 @@ namespace gdjs {
           const editorId =
             this._options.initialRuntimeGameStatus?.editorId || null;
           const editorCamera3D =
-            this._options.initialRuntimeGameStatus?.editorCamera3D || null;
+            this._options.initialRuntimeGameStatus?.editorCamera || null;
           this._inGameEditor.switchToSceneOrVariant(
             editorId,
             sceneName,
